@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.containsString;
+import static utils.Files.readTextFromPath;
 
 public class TxtAssertTests {
 
@@ -16,10 +17,8 @@ public class TxtAssertTests {
         String txtFilePath = "./src/test/resources/files/1.txt";
         String expectedText = "Слоны идут на север";
 
-        String fileText = FileUtils.readFileToString(new File(txtFilePath), StandardCharsets.UTF_8);
-        assertThat(fileText, containsString(expectedText));
-
-
+        String actualText = readTextFromPath(txtFilePath);
+        assertThat(actualText, containsString(expectedText));
 
     }
 }

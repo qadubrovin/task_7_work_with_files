@@ -22,6 +22,7 @@ dependencies {
             "org.junit.jupiter:junit-jupiter-api:$junitVersion",
             "io.qameta.allure:allure-selenide:$allureVersion",
             "com.codeborne:selenide:$selenideVersion",
+            "com.codeborne:pdf-test:1.5.1",
             "org.hamcrest:hamcrest-all:1.3"
     )
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:$junitVersion")
