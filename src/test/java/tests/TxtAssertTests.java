@@ -1,11 +1,9 @@
 package tests;
 
-import org.apache.commons.io.FileUtils;
 import org.junit.jupiter.api.Test;
 
-import java.io.File;
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
+
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.containsString;
 import static utils.Files.readTextFromPath;
